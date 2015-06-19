@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'question-answer-cli',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://questionanswercli.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
