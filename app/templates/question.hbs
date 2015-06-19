@@ -33,7 +33,7 @@
   <h3>Answer(s) to {{model.author}}'s Question:</h3>
   {{#each answer in model.answers}}
     <div class="answer">
-      <img src='/app/styles/answer.png' style="width:65px;height45px;float:left;">
+      <img src='/assets/images/answer.png' style="width:65px;height45px;float:left;">
       <h4>{{answer.answerer}}'s answer: {{answer.answer}}</h4>
       <p>{{#link-to 'answer' answer.id}}[click here to view/edit/delete]{{/link-to}}</p>
     </div>
