@@ -18,7 +18,7 @@
 <li>`npm install`</li>
 <li>`bower install`</li>
 <ul>
-*## Running / Development
+## Running / Development
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
