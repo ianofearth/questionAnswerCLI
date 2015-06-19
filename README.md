@@ -2,7 +2,7 @@
 #Program Name: Question and Answer
 #Description: 
 <p>Question and Answer is an application in EmberCLI using emberfire and firebase that will allow a user to enter questions and answers to those questions.  It also allows for editing and deleting those questions and answers once they have been added.  It uses a local store as a database to save the information for the page so the user can leave the page at any time and come back to the same computer to view the saved questions and answers.</p>
-## Prerequisites
+# Prerequisites
 <p>You will need the following things properly installed on your computer.</p>
 <ul>
 <li>[Git](http://git-scm.com/)</li>
@@ -11,19 +11,19 @@
 <li>[Ember CLI](http://www.ember-cli.com/)</li>
 <li>[PhantomJS](http://phantomjs.org/)</li>
 </ul>
-## Installation
+# Installation
 <ul>
 <li>`git clone <repository-url>` this repository</li>
 <li>change into the new directory</li>
 <li>`npm install`</li>
 <li>`bower install`</li>
 <ul>
-## Running / Development
+# Running / Development
 
 <p>`ember server`</p>
 <p>Visit your app at [http://localhost:4200](http://localhost:4200).</p>
 
-### Code Generators
+# Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
 
