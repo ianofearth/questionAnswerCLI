@@ -19,14 +19,12 @@
 <li>`bower install`</li>
 <ul>
 # Running / Development
-
 <p>`ember server`</p>
 <p>Visit your app at [http://localhost:4200](http://localhost:4200).</p>
 
 # Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
-
 #Set-up instructions: 
 <ol>
 <li>Go to www.github.com/ianofearth</li>
