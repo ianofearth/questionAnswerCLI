@@ -1,39 +1,39 @@
 <div class="display">
-  <h1>{{question}}</h1>
-  <h3>Submitted by: {{author}}</h3>
+  <h1>{{model.question}}</h1>
+  <h3>Submitted by: {{model.author}}</h3>
   <h3>Additional information:</h3>
-  <p>{{description}}</p>
+  <p>{{model.description}}</p>
 
 
   {{#if isEditing}}
   <form class="form">
   <div class="form-group">
     <label for="question">Change Question to: </label>
-    {{input id="question" class="form-control" value=question}}
+    {{input id="question" class="form-control" value=model.question}}
   </div>
 
   <div class="form-group">
     <label for="author">Change Author to: </label>
-    {{input id="author" class="form-control" value=author}}
+    {{input id="author" class="form-control" value=model.author}}
   </div>
 
   <div class="form-group">
     <label for="description">Change Description to: </label>
-    {{textarea id="description" class="form-control" rows="5" value=description}}
+    {{textarea id="description" class="form-control" rows="5" value=model.description}}
   </div>
   <button class="btn btn-primary" {{action 'save'}}>Update this Question's Information</button>
   </form>
 
   {{else}}
-  {{#link-to 'new-answer' this.id class="btn btn-success"}}Answer {{author}}'s Question{{/link-to}}
-  <button class="btn btn-primary" {{action 'edit'}}>Edit {{author}}'s Question's Information</button>
-  <button class="btn btn-danger" {{action 'delete'}}>Delete {{author}}'s Question</button>
+  {{#link-to 'answers' class="btn btn-success"}}Answer {{model.author}}'s Question{{/link-to}}
+  <button class="btn btn-primary" {{action 'edit'}}>Edit {{model.author}}'s Question's Information</button>
+  <button class="btn btn-danger" {{action 'delete'}}>Delete {{model.author}}'s Question</button>
 
 
-  <h3>Answer(s) to {{author}}'s Question:</h3>
-  {{#each answers as |answer|}}
+  <h3>Answer(s) to {{model.author}}'s Question:</h3>
+  {{#each answer in model.answers}}
     <div class="answer">
-      <img src="css/answer.png" style="width:65px;height45px;float:left;">
+      <img src='/app/styles/answer.png' style="width:65px;height45px;float:left;">
       <h4>{{answer.answerer}}'s answer: {{answer.answer}}</h4>
       <p>{{#link-to 'answer' answer.id}}[click here to view/edit/delete]{{/link-to}}</p>
     </div>

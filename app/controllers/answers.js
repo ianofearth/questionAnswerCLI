@@ -13,8 +13,12 @@ export default Ember.Controller.extend({
       var question = this.get('controllers.question.model');
       question.get('answers').pushObject(answer);
       question.save();
+      this.setProperties({
+        answerer: '',
+        answer: ''
+      });
 
-      this.transitionToRoute('question', question.id);
+      this.transitionToRoute('questions');
     }
   }
 });

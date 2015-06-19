@@ -16,6 +16,7 @@ export default Ember.Controller.extend({
       var answer = this.get('model');
       var question = this.get('controllers.question.model');
       answer.save();
+
     },
     deleteAnswer: function() {
       if(confirm('Are you sure you want to remove this Answer from the Question?')) {

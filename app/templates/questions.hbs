@@ -7,7 +7,7 @@
       <div class="question">
         <div class="row">
           <div class="col-md-6">
-            <img class="imgquestion" src="css/question.png" style="width:65px;float:left;">
+            <img class="imgquestion" src="styles/images/question.png" style="width:65px;float:left;">
             <h2>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</h2>
           </div>
           <div class="col-md-6">
@@ -20,5 +20,7 @@
     </ul>
 
 
-  <p>{{#link-to 'new-question' classNames="btn btn-primary"}}Ask Question{{/link-to}}</p>
+  <p>{{#link-to 'questions.new' classNames="btn btn-primary"}}Ask Question{{/link-to}}</p>
 </div>
+
+{{outlet}}
