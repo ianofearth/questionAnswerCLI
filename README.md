@@ -20,8 +20,8 @@
 <ul>
 ## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+<p>`ember server`</p>
+<p>Visit your app at [http://localhost:4200](http://localhost:4200).</p>
 
 ### Code Generators
 
@@ -37,13 +37,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 <li>This will create a folder on your desktop called "questionAnswer" holding the project folders and files</li>
 <li>In the command line, switch to the project folder.  From the ~ prompt type "cd Desktop/" and press return.  This will take you to the desktop.</li>
 <li>Now in the command line type: "cd questionAnswer/" and press return.  This will take you to the project's folder</li>
-<li>From within the project folder, in the command line type: "python -m SimpleHTTPServer" and press return.  This will start a local server for you to view the project.</li>
-<li>Into a browser address bar type: "localhost:8000" and press return to view the page.</li>
+<li>You will need to make sure you have the proper version of emberCLI in order for this app to function</li>
+<li>From within the project folder, in the command line type: "ember server" and press return.  This will start a local server for you to view the project.</li>
+<li>Into a browser address bar type: "localhost:4200" and press return to view the page.</li>
 <li>Follow the onscreen instructions to ask questions and post answers!</li>
 </ol>
 </p>
 #Bug reports: 
-<p>The questionAnswer application has no known bugs at this time.  Any discovered bugs should be reoprted directly to the programs creator at thisisnotarealemail@gmail.com</p>
+<p>The questionAnswer application one known bug that needs further investigation; upon addition of an answer, often 3-4 copies will be displayed.  Upon refresh the additional copies will disappear.  Any more discovered bugs should be reoprted directly to the programs creator at thisisnotarealemail@gmail.com</p>
 #Licenses and Copywright info: <p>ianofearth License.  Copyright 2015 ianofearth industries.</p>
 #<h2>You are not granted rights or licenses to the trademarks of ianofearth industries without the express written consent of ianofearth industries.</h2>
 #Future development:
