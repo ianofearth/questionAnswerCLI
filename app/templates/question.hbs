@@ -35,6 +35,7 @@
     <div class="answer">
       <img src='/assets/images/answer.png' style="width:65px;height45px;float:left;">
       <h4>{{answer.answerer}}'s answer: {{answer.answer}}</h4>
+      <p>Answered: {{answer.timestamp}}</p>
       <p>{{#link-to 'answer' answer.id}}[click here to view/edit/delete]{{/link-to}}</p>
     </div>
   {{/each}}

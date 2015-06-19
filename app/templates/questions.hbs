@@ -6,11 +6,12 @@
       {{#each question in model}}
       <div class="question">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-9">
             <img class="imgquestion" src="/assets/images/question.png" style="width:65px;float:left;">
             <h2>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</h2>
+            <p>Asked: {{question.timestamp}}</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-3">
             <h4>Submitted by: {{question.author}}</h4>
           </div>
         </div>

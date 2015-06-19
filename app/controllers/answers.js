@@ -4,9 +4,13 @@ export default Ember.Controller.extend({
   needs: ['question'],
   actions: {
     save: function() {
+      // var currentdate = new Date();
+      // var datetime = "Last Sync: " + currentdate.getDay() + "/"+currentdate.getMonth() + "/" + currentdate.getFullYear() + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
       var answer = this.store.createRecord('answer', {
         answerer: this.get('answerer'),
-        answer: this.get('answer')
+        answer: this.get('answer'),
+        timestamp: new Date
       });
       answer.save();
 
