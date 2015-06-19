@@ -1,0 +1,20 @@
+<form class="form">
+  <h1>New Question</h1>
+  <div class="form-group">
+    <label for="question">What is your Question?: </label>
+    {{input id="question" class="form-control" value=question}}
+  </div>
+
+  <div class="form-group">
+    <label for="author">Question Author: </label>
+    {{input id="author" class="form-control" value=author}}
+  </div>
+
+  <div class="form-group">
+    <label for="description">Describe your Question: </label>
+    {{textarea id="description" class="form-control" rows="5" value=description}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'save'}}>Ask Question</button>
+
+</form>

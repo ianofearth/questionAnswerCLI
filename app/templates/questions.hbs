@@ -1,0 +1,24 @@
+<div class="display">
+
+    <h1>Questions:</h1>
+
+    <ul>
+      {{#each question in model}}
+      <div class="question">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="imgquestion" src="css/question.png" style="width:65px;float:left;">
+            <h2>{{#link-to 'question' question.id}}{{question}}{{/link-to}}</h2>
+          </div>
+          <div class="col-md-6">
+            <h4>Submitted by: {{author}}</h4>
+          </div>
+        </div>
+      </div>
+      <br>
+      {{/each}}
+    </ul>
+
+
+  <p>{{#link-to 'new-question' classNames="btn btn-primary"}}Ask Question{{/link-to}}</p>
+</div>
