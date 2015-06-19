@@ -1,0 +1,16 @@
+
+
+<form class="form">
+  <h1>Your answer:</h1>
+  <div class="form-group">
+    <label for="answerer">Enter your Name: </label>
+    {{input value=answerer id="answerer" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="answer">Description:</label>
+    {{textarea value=answer id="answer" class="form-control" rows="5"}}
+  </div>
+
+
+  <button class="btn btn-success" {{action 'save'}}>Add an Answer to {{author}}'s Question</button>
+</form>
